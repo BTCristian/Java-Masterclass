@@ -1,3 +1,5 @@
+package MethodsKatas;
+
 public class PositiveNegativeZero {
     public static void checkNumber(int number) {
         if (number > 0) {
