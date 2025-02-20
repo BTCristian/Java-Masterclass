@@ -1,0 +1,15 @@
+package MethodsKatas;
+
+public class DecimalComparator {
+    public static boolean areEqualByThreeDecimalPlaces ( double firstDouble, double secondDouble) {
+
+        int firstRounded = (int)(firstDouble * 1000);
+        int secondRounded = (int)(secondDouble * 1000);
+
+
+        if (firstRounded == secondRounded){
+            return true;
+        }
+        return false;
+    }
+}
