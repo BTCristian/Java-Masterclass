@@ -7,9 +7,6 @@ public class DecimalComparator {
         int secondRounded = (int)(secondDouble * 1000);
 
 
-        if (firstRounded == secondRounded){
-            return true;
-        }
-        return false;
+        return firstRounded == secondRounded;
     }
 }
