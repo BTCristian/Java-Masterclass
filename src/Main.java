@@ -12,7 +12,7 @@ public class Main {
 
         //SpeedConverter
         System.out.println(
-                "10 Km/h = " + SpeedConverter.toMilesPerHour(10)
+                "'toMilesPerHour(10)' km/h = " + SpeedConverter.toMilesPerHour(10)
                 + " mi/h");
 
 
@@ -23,22 +23,32 @@ public class Main {
         System.out.println(BarkingDog.shouldWakeUp(true, 2));
 
         //LeapYear
-        System.out.println("Is -1600 leap year? = " + LeapYear.isLeapYear(-1600));
-        System.out.println("Is 1924 leap year? = " + LeapYear.isLeapYear(1924));
-        System.out.println("Is 2000 leap year? = " + LeapYear.isLeapYear(2000));
-        System.out.println("Is 2017 leap year? = " + LeapYear.isLeapYear(2017));
+        System.out.println("isLeapYear(-1600) " + LeapYear.isLeapYear(-1600));
+        System.out.println("isLeapYear(1924) " + LeapYear.isLeapYear(1924));
+        System.out.println("isLeapYear(2000) " + LeapYear.isLeapYear(2000));
+        System.out.println("isLeapYear(2017) " + LeapYear.isLeapYear(2017));
 
         //DecimalComparator
-        System.out.println("Is '-3.1756' equal up to 3 decimals with '-3.175'?  Answer: "
+        System.out.println("areEqualByThreeDecimalPlaces(-3.1756, -3.175)  "
                 + DecimalComparator.areEqualByThreeDecimalPlaces(-3.1756, -3.175));
 
-        System.out.println("Is '3.175' equal up to 3 decimals with '3.176'?  Answer: "
+        System.out.println("areEqualByThreeDecimalPlaces(3.175, 3.176)  "
                 + DecimalComparator.areEqualByThreeDecimalPlaces(3.175, 3.176));
 
-        System.out.println("Is '3.0' equal up to 3 decimals with '3.0'?  Answer: "
+        System.out.println("areEqualByThreeDecimalPlaces(3.0, 3.0)  "
                 + DecimalComparator.areEqualByThreeDecimalPlaces(3.0, 3.0));
 
-        System.out.println("Is '-3.123' equal up to 3 decimals with '3.123'?  Answer: "
+        System.out.println("areEqualByThreeDecimalPlaces(-3.123, 3.123)  "
                 + DecimalComparator.areEqualByThreeDecimalPlaces(-3.123, 3.123));
+
+        //EqualSumChecker
+        System.out.println("hasEqualSum(1, 1, 1)  = "
+                + EqualSumChecker.hasEqualSum(1,1,1));
+
+        System.out.println("hasEqualSum(1, 1, 2)  = "
+                + EqualSumChecker.hasEqualSum(1,1,2));
+
+        System.out.println("hasEqualSum(1, -1, 0)  = "
+                + EqualSumChecker.hasEqualSum(1,-1,0));
     }
 }
