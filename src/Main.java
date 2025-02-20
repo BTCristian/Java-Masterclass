@@ -1,7 +1,4 @@
-import MethodsKatas.BarkingDog;
-import MethodsKatas.MegaBytesConverter;
-import MethodsKatas.PositiveNegativeZero;
-import MethodsKatas.SpeedConverter;
+import MethodsKatas.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +21,11 @@ public class Main {
 
         System.out.println(BarkingDog.shouldWakeUp(true, 19));
         System.out.println(BarkingDog.shouldWakeUp(true, 2));
+
+        System.out.println("Is -1600 leap year? = " + LeapYear.isLeapYear(-1600));
+        System.out.println("Is 1924 leap year? = " + LeapYear.isLeapYear(1924));
+        System.out.println("Is 2000 leap year? = " + LeapYear.isLeapYear(2000));
+        System.out.println("Is 2017 leap year? = " + LeapYear.isLeapYear(2017));
+
     }
 }
