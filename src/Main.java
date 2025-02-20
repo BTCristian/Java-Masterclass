@@ -10,5 +10,7 @@ public class Main {
         System.out.println(
                 "10 Km/h = " + SpeedConverter.toMilesPerHour(10)
                 + " mi/h");
+
+        MegaBytesConverter.printMegaBytesAndKiloBytes(1879);
     }
 }
