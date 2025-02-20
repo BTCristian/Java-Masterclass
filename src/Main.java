@@ -50,5 +50,11 @@ public class Main {
 
         System.out.println("hasEqualSum(1, -1, 0)  = "
                 + EqualSumChecker.hasEqualSum(1,-1,0));
+
+        //TeenNumberChecker
+        System.out.println("hasTeen(9, 99, 19) "
+                + TeenNumberChecker.hasTeen(9, 99, 19));
+        System.out.println("isTeen(9) "
+                + TeenNumberChecker.isTeen(9));
     }
 }
