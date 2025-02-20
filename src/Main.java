@@ -56,5 +56,11 @@ public class Main {
                 + TeenNumberChecker.hasTeen(9, 99, 19));
         System.out.println("isTeen(9) "
                 + TeenNumberChecker.isTeen(9));
+
+        //OverloadedMethod
+        System.out.println("OverloadedMethodChallenge.convertToCentimeters(5) = "
+                + OverloadedMethodChallenge.convertToCentimeters(5));
+        System.out.println( "OverloadedMethodChallenge.convertToCentimeters(8,5) = "
+                + OverloadedMethodChallenge.convertToCentimeters(8,5));
     }
 }
