@@ -62,5 +62,11 @@ public class Main {
                 + OverloadedMethodChallenge.convertToCentimeters(5));
         System.out.println( "OverloadedMethodChallenge.convertToCentimeters(8,5) = "
                 + OverloadedMethodChallenge.convertToCentimeters(8,5));
+
+        //SecondsAndMinutes
+        System.out.println("SecondsAndMinutes.getDurationString(87) = " + SecondsAndMinutes.getDurationString(87));
+        System.out.println("SecondsAndMinutes.getDurationString(87) = " + SecondsAndMinutes.getDurationString(-87));
+        System.out.println("SecondsAndMinutes.getDurationString(87, 92) = " + SecondsAndMinutes.getDurationString(87,54));
+        System.out.println("SecondsAndMinutes.getDurationString(87, 92) = " + SecondsAndMinutes.getDurationString(87,74));
     }
 }
