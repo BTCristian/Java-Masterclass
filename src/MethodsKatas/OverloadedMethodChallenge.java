@@ -6,6 +6,10 @@ public class OverloadedMethodChallenge {
 
         System.out.println("5ft, 8in = " + convertToCentimeters(5, 8) + "cm");
         System.out.println("68in = " + convertToCentimeters(68) + "cm");
+
+        System.out.println("AreaCalculator(5.0) = " + AreaCalculator.area(5.0));
+        System.out.println("AreaCalculator(5.0) = " + AreaCalculator.area(-1));
+        System.out.println("AreaCalculator(4, 5) = " + AreaCalculator.area(4, 5));
     }
 
     public static double convertToCentimeters(int inches) {
@@ -20,5 +24,23 @@ public class OverloadedMethodChallenge {
         int totalInches = feetToInches + inches;
 
         return convertToCentimeters(totalInches);
+    }
+
+    //AreaCalculator
+    public static class AreaCalculator {
+
+        public static double area (double radius) {
+            if (radius < 0){
+                return -1.0;
+            }
+            return radius * radius * 3.141592653589793;
+        }
+
+        public static double area (double x, double y){
+            if (x < 0 || y < 0){
+                return -1.0;
+            }
+            return x * y;
+        }
     }
 }
