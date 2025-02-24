@@ -12,6 +12,11 @@ public class OverloadedMethodChallenge {
         System.out.println("AreaCalculator(4, 5) = " + AreaCalculator.area(4, 5));
 
         System.out.println("MinutesToYearsDaysCalculator.printYearsAndDays(525600):  " + MinutesToYearsDaysCalculator.printYearsAndDays(525600));
+
+
+        System.out.print("IntEqualityPrinter.printEqual(1,1,1) => ");IntEqualityPrinter.printEqual(1,1,1);
+        System.out.print("IntEqualityPrinter.printEqual(2,2,3) => ");IntEqualityPrinter.printEqual(2,2,3);
+        System.out.print("IntEqualityPrinter.printEqual(-1,2,3) => ");IntEqualityPrinter.printEqual(-1,2,3);
     }
 
     public static double convertToCentimeters(int inches) {
@@ -60,6 +65,28 @@ public class OverloadedMethodChallenge {
                 return(minutes + " min = " + year + " y and " + days +" d");
             }
 
+
+
+        }
+    }
+
+
+    //IntEqualityPrinter
+
+    public static class IntEqualityPrinter {
+
+        public static void printEqual (int firstVar, int secondVar, int thirdVar) {
+
+
+            if (firstVar < 0 || secondVar < 0 || thirdVar < 0) {
+                System.out.println("Invalid Value");
+            }else if (firstVar == secondVar && secondVar == thirdVar) {
+                System.out.println("All numbers are equal");
+            }else if (firstVar != secondVar && secondVar != thirdVar && firstVar != thirdVar) {
+                System.out.println("All numbers are different");
+            } else{
+                System.out.println("Neither all are equal or different");
+            }
 
 
         }
