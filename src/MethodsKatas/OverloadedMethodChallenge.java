@@ -10,6 +10,8 @@ public class OverloadedMethodChallenge {
         System.out.println("AreaCalculator(5.0) = " + AreaCalculator.area(5.0));
         System.out.println("AreaCalculator(5.0) = " + AreaCalculator.area(-1));
         System.out.println("AreaCalculator(4, 5) = " + AreaCalculator.area(4, 5));
+
+        System.out.println("MinutesToYearsDaysCalculator.printYearsAndDays(525600):  " + MinutesToYearsDaysCalculator.printYearsAndDays(525600));
     }
 
     public static double convertToCentimeters(int inches) {
@@ -43,4 +45,24 @@ public class OverloadedMethodChallenge {
             return x * y;
         }
     }
+
+    //MinutesToYearsDaysCalculator
+    public static class MinutesToYearsDaysCalculator {
+        public static String printYearsAndDays (long minutes) {
+
+            if (minutes < 0) {
+                return "Invalid Value";
+            }else {
+                long year = minutes / 525600;
+                long remainingMinutes = minutes % 525600;
+                long days = remainingMinutes / 1440;
+
+                return(minutes + " min = " + year + " y and " + days +" d");
+            }
+
+
+
+        }
+    }
+
 }
