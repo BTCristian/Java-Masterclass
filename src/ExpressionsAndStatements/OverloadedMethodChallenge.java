@@ -1,4 +1,4 @@
-package MethodsKatas;
+package ExpressionsAndStatements;
 
 public class OverloadedMethodChallenge {
 

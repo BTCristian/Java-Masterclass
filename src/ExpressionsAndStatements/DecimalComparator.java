@@ -1,4 +1,4 @@
-package MethodsKatas;
+package ExpressionsAndStatements;
 
 public class DecimalComparator {
     public static boolean areEqualByThreeDecimalPlaces ( double firstDouble, double secondDouble) {

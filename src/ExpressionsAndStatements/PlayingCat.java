@@ -1,4 +1,4 @@
-package MethodsKatas;
+package ExpressionsAndStatements;
 
 public class PlayingCat {
     public static void main(String[] args) {
